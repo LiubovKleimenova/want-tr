@@ -1,0 +1,100 @@
+.container {
+  width: 320px;
+}
+
+.main-centered {
+  padding: 0 40px;
+  text-align: center;
+  outline: 1px solid orange;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: "Ubuntu", Arial, sans-serif;
+}
+
+.btn {
+  display: block;
+  border-radius: 14px;
+  border: none;
+}
+
+.btn-blue {
+  width: 100%;
+  background-color: #1357E0;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+}
+
+.highlight {
+  background-color: #ffe401;
+}
+
+/* login page */
+.main-centered label, 
+.main-centered input {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  color: #252525;
+  text-align: left;
+}
+
+.main-centered label {
+  margin-bottom: 5px;
+  margin-top: 22px;
+}
+
+.main-centered input {
+  padding: 16px;
+  border: 1px solid #979797;
+  border-radius: 14px;
+}
+
+.main-centered .btn {
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.main-centered a {
+  display: block;
+  margin-bottom: 18px;
+}
+
+
+/* categories page */
+#categories-nav {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.cat {
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  padding: 3px;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #252525;
+}
+
+.red-cat {
+  background-color: #ffd2d2;
+}
+
+.green-cat {
+ background-color: #bde1d8;
+}
+
+.blue-cat {
+  background-color: #d7e6fd;
+}
+
+.tan-cat {
+  background-color: #fff2e3;
+}
