@@ -1,16 +1,49 @@
+/* general */
+.screen-readers {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
 .container {
   width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  outline: 1px solid orange;
+}
+
+.container-wide {
+  padding: 20px;
 }
 
 .main-centered {
   padding: 0 40px;
   text-align: center;
-  outline: 1px solid orange;
+  outline: 1px solid green;
 }
+
+h1, h2 {
+  font-family: "Ubuntu", Arial, sans-serif;
+  margin: 0;
+}
+
 
 h1 {
   font-size: 36px;
-  font-family: "Ubuntu", Arial, sans-serif;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn {
@@ -28,11 +61,41 @@ h1 {
   padding: 15px;
 }
 
+.btn-icon {
+  height: 20px;
+  border: none;
+  background-position: center;
+  background-size: cover;
+}
+
+.btn-close-wrapper {
+  text-align: right;
+}
+
+.btn-close {
+  width: 20px;
+  background-image: url("assets/icon-close.png");
+}
+
+.btn-back {
+  width: 12px;
+  background-image: url("assets/icon-back.png");
+}
+
+.btn-search {
+  width: 20px;
+  background-image: url("assets/icon-search.png");
+}
+
 .highlight {
   background-color: #ffe401;
 }
 
 /* login page */
+.main-centered {
+  padding-top: 20px;
+}
+
 .main-centered label, 
 .main-centered input {
   box-sizing: border-box;
@@ -71,6 +134,9 @@ h1 {
   justify-content: flex-start;
   flex-wrap: wrap;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 18px;
 }
 
 .cat {
@@ -97,4 +163,45 @@ h1 {
 
 .tan-cat {
   background-color: #fff2e3;
+}
+
+#collection {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#collection li {
+  width: 280px;
+  padding: 90px 0 17px 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  background-color: burlywood;
+  background-size: initial;
+  background-position: left;
+}
+
+#collection li:nth-of-type(1) {
+ background-image: url("");
+}
+
+.collection-heading {
+  color: white;
+  font-size: 16px;
+  flex-shrink: 2;
+}
+
+.books-amount {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 7px;
+}
+
+.books-amount p {
+  margin: 0;
+}
+
+.books-amount_amount {
+  color: #1357E0;
 }
