@@ -1,4 +1,8 @@
 /* general */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .screen-readers {
   position: absolute;
   width: 1px;
@@ -19,6 +23,15 @@
 
 .container-wide {
   padding: 20px;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 80px;
+  min-height: 100vh;
+  background-image: linear-gradient(#ffffff, #fff 70%, #d1dce8 140%);
+  background-attachment: fixed;
 }
 
 .main-centered {
@@ -83,7 +96,8 @@ h2 {
 }
 
 .btn-search {
-  width: 20px;
+  width: 17px;
+  height: 17px;
   background-image: url("assets/icon-search.png");
 }
 
@@ -172,8 +186,9 @@ h2 {
 }
 
 #collection li {
-  width: 280px;
-  padding: 90px 0 17px 20px;
+  position: relative;
+  width: 270px;
+  padding: 95px 35px 17px 20px;
   margin-bottom: 20px;
   border-radius: 6px;
   background-color: burlywood;
@@ -181,21 +196,31 @@ h2 {
   background-position: left;
 }
 
-#collection li:nth-of-type(1) {
- background-image: url("");
+.books-collection {
+  font-size: 28px;
+  color: #252525;
+  margin-top: 35px;
+  margin-bottom: 7px;
 }
 
 .collection-heading {
+  margin: 0;
   color: white;
   font-size: 16px;
   flex-shrink: 2;
+  line-height: 20px;
 }
 
 .books-amount {
+  position: absolute;
+  bottom: 17px;
+  right: -10px;
   width: 45px;
   height: 45px;
+  padding-top: 5px;
   background-color: white;
   border-radius: 7px;
+  text-align: center;
 }
 
 .books-amount p {
@@ -204,4 +229,38 @@ h2 {
 
 .books-amount_amount {
   color: #1357E0;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.books-amount_text {
+  font-size: 10px;
+}
+
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 320px;
+  margin-left: -20px;
+  background-color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+footer li {
+  width: 25%;
+  padding-top: 23px;;
+  text-align: center;
+  /* outline: 1px solid orange; */
+  font-size: 10px;
+  min-height: 50px;
 }
