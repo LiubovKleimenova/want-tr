@@ -18,7 +18,7 @@
   width: 320px;
   box-sizing: border-box;
   margin: 0 auto;
-  outline: 1px solid orange;
+  /* outline: 1px solid orange; */
 }
 
 .container-wide {
@@ -28,7 +28,7 @@
 body {
   position: relative;
   margin: 0;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
   min-height: 100vh;
   background-image: linear-gradient(#ffffff, #fff 70%, #d1dce8 140%);
   background-attachment: fixed;
@@ -364,7 +364,7 @@ footer ul {
 footer li {
   position: relative;
   width: 25%;
-  padding-top: 23px;;
+  padding-top: 35px;;
   text-align: center;
   /* outline: 1px solid orange; */
   font-size: 10px;
@@ -374,30 +374,34 @@ footer li {
 footer li:before {
   content: "";
   position: absolute;
-  bottom: 22px;
+  bottom: 16px;
+  left: 36%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 footer li:nth-child(1):before {
-  width: 17px;
+  width: 20px;
   height: 18px;
-  background-image: url("assets/menu-icon-library-active.png");
+  background-image: url("assets/menu-icon-library.png");
+  
 }
 
 footer li:nth-child(2):before {
-  width: 17px;
-  height: 18px;
-  background-image: url("assets/menu-icon-library-active.png");
+  width: 18px;
+  height: 22px;
+  background-image: url("assets/menu-icon-wishlist.png");
 }
 
 footer li:nth-child(3):before {
   width: 17px;
   height: 18px;
-  background-image: url("assets/menu-icon-library-active.png");
+  background-image: url("assets/menu-icon-in-progress.png");
 }
 
 footer li:nth-child(4):before {
   width: 17px;
   height: 18px;
-  background-image: url("assets/menu-icon-library-active.png");
+  background-image: url("assets/menu-icon-done.png");
 }
 
